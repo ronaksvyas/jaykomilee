@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f4ec">
+  <meta name="description" content="Celebrate the wedding of Jay and Milee on 19–20 January 2027.">
+  <title>Jay & Milee | Wedding Celebration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500;600&family=Noto+Sans+Gujarati:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <nav class="side-nav" aria-label="Page sections">
+    <a href="#teaser" aria-label="Teaser">01</a>
+    <a href="#welcome" aria-label="Welcome">02</a>
+    <a href="#celebrations" aria-label="Celebrations">03</a>
+    <a href="#wedding" aria-label="Wedding">04</a>
+    <a href="#details" aria-label="Details">05</a>
+    <a href="#rsvp" aria-label="RSVP">06</a>
+  </nav>
+
+  <audio id="bgMusic" loop preload="auto"></audio>
+
+  <main>
+    <section class="teaser-section" id="teaser">
+      <div class="teaser-watermark" aria-hidden="true">
+        <img src="assets/caricatures/teaser-couple.jpg" alt="" width="1024" height="1536">
+      </div>
+      <div class="section-florals theme-teaser" aria-hidden="true">
+        <img class="floral-side floral-side-left" src="assets/florals/lotus-left.jpg" alt="" loading="lazy" width="768" height="1024">
+        <img class="floral-side floral-side-right" src="assets/florals/lotus-right.jpg" alt="" loading="lazy" width="768" height="1024">
+      </div>
+      <div class="teaser-inner">
+        <button type="button" class="envelope" id="envelopeOpen" aria-label="Open the invitation">
+          <span class="envelope-shadow" aria-hidden="true"></span>
+          <span class="envelope-flap" aria-hidden="true"></span>
+          <span class="envelope-pocket" aria-hidden="true"></span>
+          <span class="envelope-card" aria-hidden="true">
+            <span class="envelope-card-ornament">✧</span>
+            <span class="hashtag teaser-hashtag" id="teaserHashtag">#JayKoMilee</span>
+          </span>
+          <span class="envelope-seal" aria-hidden="true"><i>✧</i></span>
+          <span class="envelope-label">You're invited</span>
+        </button>
+        <p class="envelope-hint" id="scrollCue">Tap the seal to open</p>
+      </div>
+    </section>
+
+    <section class="welcome-section" id="welcome">
+      <div class="section-florals theme-welcome" aria-hidden="true">
+        <img class="floral-side floral-side-left" src="assets/florals/lotus-left.jpg" alt="" loading="lazy" width="768" height="1024">
+        <img class="floral-side floral-side-right" src="assets/florals/lotus-right.jpg" alt="" loading="lazy" width="768" height="1024">
+      </div>
+      <div class="welcome-inner">
+        <div class="invocation-stack">
+          <p class="eyebrow gold-text gujarati">શ્રી ગણેશાય નમઃ</p>
+          <p class="eyebrow gold-text gujarati">ૐ નમો અરિહંતાણં</p>
+        </div>
+        <div class="ornament" aria-hidden="true"><i></i><span>✧</span><i></i></div>
+        <p class="eyebrow">A JOYFUL INVITATION FROM OUR FAMILIES</p>
+        <h1>
+          <span id="groomHero">Jay</span>
+          <em>&</em>
+          <span id="brideHero">Milee</span>
+        </h1>
+        <div class="blessing-families reveal" id="blessingFamilies"></div>
+        <p class="hero-subtitle">invite you to celebrate the beginning<br>of their forever</p>
+        <div class="datetime datetime-hero">
+          <span class="datetime-day">19–20</span>
+          <span class="datetime-month">JANUARY 2027</span>
+        </div>
+        <p class="body-copy welcome-copy">With the love and blessings of our families, we are beginning a beautiful new chapter of our lives. We would be delighted to have you join us as we celebrate these special moments filled with traditions, laughter, music and love.</p>
+        <a class="next-page" href="#celebrations">Continue <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="section celebrations" id="celebrations">
+      <div class="section-florals theme-celebrations" aria-hidden="true">
+        <img class="floral-side floral-side-left" src="assets/florals/lotus-left.jpg" alt="" loading="lazy" width="768" height="1024">
+        <img class="floral-side floral-side-right" src="assets/florals/lotus-right.jpg" alt="" loading="lazy" width="768" height="1024">
+      </div>
+      <div class="section-heading">
+        <div class="section-kicker gujarati">શુભ પ્રસંગો</div>
+        <p class="eyebrow">DAY ONE · TUESDAY</p>
+        <h2>The Celebrations</h2>
+        <p class="datetime datetime-section">19 JANUARY 2027</p>
+      </div>
+      <div class="timeline" id="dayOneEvents"></div>
+      <p class="meal-note reveal">Lunch · 12:30 PM onwards</p>
+      <article class="sangeet-feature reveal">
+        <div class="sangeet-media">
+          <img src="assets/caricatures/sangeet.jpg" alt="Jay and Milee in sage green and black outfits" loading="lazy" width="1024" height="1536">
+          <span class="sangeet-note n1" aria-hidden="true">♪</span>
+          <span class="sangeet-note n2" aria-hidden="true">♫</span>
+          <span class="sangeet-note n3" aria-hidden="true">♩</span>
+        </div>
+        <div class="sangeet-panel">
+          <p class="sangeet-kicker">Day one · Evening</p>
+          <h3>Sangeet</h3>
+          <p class="sangeet-lead">Music, dance, laughter and unforgettable memories.</p>
+          <p class="sangeet-body">Let's celebrate, dance and make the night magical!</p>
+          <p class="datetime datetime-sangeet">6:00 PM</p>
+        </div>
+      </article>
+      <p class="meal-note reveal">Dinner · 7:00 PM onwards</p>
+      <a class="next-page" href="#wedding">Continue <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="section wedding-section" id="wedding">
+      <div class="section-florals theme-wedding" aria-hidden="true">
+        <img class="floral-side floral-side-left" src="assets/florals/lotus-left.jpg" alt="" loading="lazy" width="768" height="1024">
+        <img class="floral-side floral-side-right" src="assets/florals/lotus-right.jpg" alt="" loading="lazy" width="768" height="1024">
+      </div>
+      <div class="section-heading">
+        <div class="section-kicker gujarati">શુભ લગ્ન</div>
+        <p class="eyebrow">DAY TWO · WEDNESDAY</p>
+        <h2>A Forever Beginning</h2>
+        <p class="datetime datetime-section">20 JANUARY 2027 · 10:00 AM</p>
+      </div>
+      <div class="wedding-stage reveal">
+        <div class="wedding-motif" aria-hidden="true"></div>
+        <div class="wedding-art">
+          <div class="art-halo" aria-hidden="true"></div>
+          <img src="assets/caricatures/wedding.png" alt="Jay and Milee in pastel wedding outfits" loading="lazy" width="1024" height="1536">
+        </div>
+      </div>
+      <div class="wedding-caption">
+        <div class="ornament" aria-hidden="true"><i></i><span>✧</span><i></i></div>
+        <p class="eyebrow">THE WEDDING CEREMONY</p>
+        <h3>Two hearts.<br>One beautiful journey.</h3>
+        <p>As we take our seven sacred steps towards forever, we would love to have you witness and bless our union.</p>
+      </div>
+      <p class="meal-note reveal">Lunch · 12:00 PM onwards</p>
+      <a class="next-page" href="#details">Continue <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="details-section" id="details">
+      <div class="section-florals theme-details" aria-hidden="true">
+        <img class="floral-side floral-side-left" src="assets/florals/lotus-left.jpg" alt="" loading="lazy" width="768" height="1024">
+        <img class="floral-side floral-side-right" src="assets/florals/lotus-right.jpg" alt="" loading="lazy" width="768" height="1024">
+      </div>
+      <div class="details-countdown">
+        <p class="eyebrow gold-text">THE BIG DAY IS APPROACHING</p>
+        <h2>Counting down to<br>our wedding day</h2>
+        <div class="countdown" aria-live="polite">
+          <div><strong id="days">--</strong><span>DAYS</span></div>
+          <i aria-hidden="true">:</i>
+          <div><strong id="hours">--</strong><span>HOURS</span></div>
+          <i aria-hidden="true">:</i>
+          <div><strong id="minutes">--</strong><span>MINUTES</span></div>
+          <i aria-hidden="true">:</i>
+          <div><strong id="seconds">--</strong><span>SECONDS</span></div>
+        </div>
+        <p class="datetime datetime-on-dark countdown-until">Until 20 January 2027 · 10:00 AM</p>
+      </div>
+      <div class="details-venue">
+        <div class="section-florals theme-venue" aria-hidden="true">
+          <img class="floral-side floral-side-left" src="assets/florals/lotus-left.jpg" alt="" loading="lazy" width="768" height="1024">
+          <img class="floral-side floral-side-right" src="assets/florals/lotus-right.jpg" alt="" loading="lazy" width="768" height="1024">
+        </div>
+        <div class="section-kicker gujarati">સ્થળ</div>
+        <p class="eyebrow">WE LOOK FORWARD TO WELCOMING YOU</p>
+        <h2>Where we celebrate</h2>
+        <div class="venue-block">
+          <p class="venue-mark" aria-hidden="true">⌖</p>
+          <h3 id="venueName">Oswal Sagar Wadi</h3>
+          <p id="venueAddress">Kamatghar, Bhiwandi 421305</p>
+          <p class="datetime datetime-stamp">19 &amp; 20 JANUARY 2027</p>
+          <a class="text-link" id="mapLink" href="https://www.google.com/maps/search/?api=1&query=Oswal+Sagar+Wadi%2C+Kamatghar%2C+Bhiwandi+421305" target="_blank" rel="noopener">GET DIRECTIONS ↗</a>
+        </div>
+        <a class="next-page" href="#rsvp">Continue <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="section rsvp-section" id="rsvp">
+      <div class="section-florals theme-rsvp" aria-hidden="true">
+        <img class="floral-side floral-side-left" src="assets/florals/lotus-left.jpg" alt="" loading="lazy" width="768" height="1024">
+        <img class="floral-side floral-side-right" src="assets/florals/lotus-right.jpg" alt="" loading="lazy" width="768" height="1024">
+      </div>
+      <p class="eyebrow rsvp-label">RSVP</p>
+      <div class="section-kicker gujarati">આપની હાજરી અમારે મન અમૂલ્ય છે</div>
+      <p class="eyebrow">YOUR PRESENCE IS OUR GREATEST BLESSING</p>
+      <h2>We can't wait<br>to celebrate with you!</h2>
+      <p class="body-copy">Come with your smiles, blessings and love. Let's make memories that last a lifetime.</p>
+      <div class="contact-list" id="contactList"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-flower" aria-hidden="true">✿</div>
+      <p class="eyebrow gold-text">WITH LOVE, LAUGHTER &amp; HAPPILY EVER AFTER</p>
+      <h2><span id="footerGroom">Jay</span> <em>&</em> <span id="footerBride">Milee</span></h2>
+      <p class="hashtag footer-hashtag">#JayKoMilee</p>
+      <p class="datetime datetime-on-dark">19 – 20 JANUARY 2027</p>
+      <div class="footer-rule" aria-hidden="true"></div>
+      <span class="gujarati footer-gujarati">સ્નેહપૂર્વક આમંત્રણ</span>
+    </footer>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
